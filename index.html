@@ -111,21 +111,28 @@
                   </li>
                 </ul>
                 <div class="checkbox">
-                  <label class="label-check">
-                    <!-- <span class="check-background">
-                      <div class="check-icon-div">
-                        <svg class="check-button">
-                          <use
-                            href="./img/symbol-defs-old.svg#icon-agree-check"
-                          ></use>
-                        </svg>
-                      </div>
-                    </span> -->
-                    <input
-                      class="agreement"
-                      type="checkbox"
-                      name="checkbox"
-                    /><span class="agreement-text">
+                  <input
+                    class="agreement"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checked"
+                  />
+                  <label class="label-check" for="checked">
+                    <div class="check-empty-div">
+                      <svg class="check-empty">
+                        <use href="./img/symbol-defs-old.svg#empty-check"></use>
+                      </svg>
+                    </div>
+
+                    <div class="check-icon-div">
+                      <svg class="check-button">
+                        <use
+                          href="./img/symbol-defs-old.svg#icon-agree-check"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="agreement-text">
                       Соглашаюсь с рассылкой и принимаю</span
                     >
                     <a class="agreement-link" href="">Условия договора</a>

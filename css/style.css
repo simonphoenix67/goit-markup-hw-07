@@ -563,34 +563,78 @@ h1 {
   position: relative;
 } */
 
-.check-background {
+.checkbox {
+  position: relative;
+  display: inline-block;
+}
+
+/* .check-background {
   position: relative;
   display: inline-block;
   width: 16px;
   height: 15px;
   background: #2196f3;
   border-radius: 2px;
-
   margin-right: 7px;
-}
+  opacity: 0;
+} */
 
 .check-button {
-  width: 11px;
-  height: 8px;
+  width: 16px;
+  height: 15px;
   fill: white;
+  background: #2196f3;
+  border-radius: 2px;
   position: absolute;
-  display: block;
-  top: 4px;
-  left: 3px;
+  display: inline-block;
+  top: 5px;
+  left: -21px;
   /* padding-left: 3px;
   padding-bottom: 3px;
   padding-top: 4px;
   padding-right: 2px; */
+  opacity: 0;
 }
 
-/* .agreement {
-  display: none;
+.agreement {
+  opacity: 0;
+}
+
+/* .agreement:checked + .check-button {
+  opacity: 1;
 } */
+
+/* .check-background-empty {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background: #2196f3;
+  border-radius: 2px;
+  margin-right: 7px;
+  opacity: 0;
+} */
+
+.agreement:checked + .label-check .check-button {
+  opacity: 1;
+}
+
+.label-check {
+  position: relative;
+  display: inline-block;
+}
+
+.check-empty {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  fill: #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  display: inline-block;
+  top: 5px;
+  left: -21px;
+}
 
 .agreement-text {
   font-weight: 400;
