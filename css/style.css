@@ -938,13 +938,12 @@ h1 {
 }
 
 /* урбать ширину */
-.all-services {
+/* .all-services {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-}
+  width: 1200px; */
+/* margin-right: auto;
+  margin-left: auto; */
 
 .service-item:not(:last-child) {
   margin-right: 30px;

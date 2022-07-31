@@ -20,11 +20,11 @@
   margin-bottom: 50px;
 }
 
-.greed__list:not(:last-child) {
+.grid__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.greed {
+.grid {
   display: flex;
   padding: 0;
   margin: 0;
