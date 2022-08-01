@@ -1,4 +1,4 @@
- $main-color: #212121;
+$main-color: #212121;
   $secondary-color: #ffffff;
   $brand-color: #2196f3;
   $additional-color: #757575;
@@ -13,13 +13,6 @@
   padding-bottom: 94px;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .customer__header {
   font-size: 36px;
@@ -30,12 +23,12 @@
   margin-bottom: 50px;
 }
 
-.grid__list:not(:last-child) {
+.greed__list:not(:last-child) {
   margin-right: 30px;
 }
 
 
-.grid {
+.greed {
   display: flex;
   padding: 0;
   margin: 0;

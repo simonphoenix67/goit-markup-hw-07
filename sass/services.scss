@@ -5,3 +5,7 @@
   flex-wrap: wrap;
   width: 1200px;
 }
+
+.all-services__item:not(:last-child) {
+  margin-right: 30px;
+}

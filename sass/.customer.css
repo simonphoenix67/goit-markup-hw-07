@@ -12,11 +12,11 @@
   margin-bottom: 50px;
 }
 
-.grid__list:not(:last-child) {
+.greed__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.grid {
+.greed {
   display: flex;
   padding: 0;
   margin: 0;
@@ -40,18 +40,14 @@
   outline: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
-.logo-customer:hover .logo-customer__icon,
-.logo-customer:focus .logo-customer__icon {
+.logo-customer:hover .logo-customer__icon, .logo-customer:focus .logo-customer__icon {
   fill: #2196f3;
 }
-
-.logo-customer:hover,
-.logo-customer:focus {
+.logo-customer:hover, .logo-customer:focus {
   display: flex;
   width: 170px;
   height: 92px;
   fill: #2196f3;
   outline: 1px solid #2196f3;
   border-radius: 4px;
-} /*# sourceMappingURL=customer.css.map */ /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=.customer.css.map */

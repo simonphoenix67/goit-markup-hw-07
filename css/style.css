@@ -66,15 +66,24 @@ ul {
   margin-right: auto;
 }
 
-.container-fix {
-  display: flex;
-}
-
 .header-container {
   display: flex;
   align-items: center;
   width: 1240px;
 }
+
+/* .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.container-fix {
+  display: flex;
+}
+
 /* outline: 1px solid red; */
 /* align-items: center; */
 /* text-align: center;
@@ -240,16 +249,13 @@ ul {
   display: inline-block;
   content: "";
 }
-
 .phone::before {
   display: inline-block;
   content: "";
 }
-
 .mail::before .info-svg {
   margin-right: 10px;
 }
-
 .mail:hover::before {
   fill: var(--brand-color);
 } */
@@ -938,12 +944,13 @@ h1 {
 }
 
 /* урбать ширину */
-/* .all-services {
+.all-services {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px; */
-/* margin-right: auto;
-  margin-left: auto; */
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .service-item:not(:last-child) {
   margin-right: 30px;
