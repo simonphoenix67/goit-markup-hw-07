@@ -213,24 +213,22 @@ ul {
 }
 
 /* ADD TO SASS */
-.business {
+.team {
+  background: var(--bg-our-team-color);
   padding-bottom: 94px;
-  padding-top: 0px;
 }
 
-.business__header {
+.team__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  color: var(--main-color);
   margin-bottom: 50px;
+  text-align: center;
 }
 
-.business-list {
+.team-list {
   display: flex;
   width: 1200px;
   justify-content: center;
@@ -240,36 +238,90 @@ ul {
   text-decoration: none;
 }
 
-.business-list__item {
-  position: relative;
+.team-list__item {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.business-list__item:not(:last-child) {
-  padding-right: 30px;
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.business-background {
-  position: absolute;
-  bottom: 0;
-  height: 70px;
-  width: 100%;
-  background: rgba(47, 48, 58, 0.8);
-  border: 0;
-  margin-bottom: 3px;
+.team__description {
+  margin-bottom: 30px;
 }
 
-.business-text {
-  text-align: center;
-  margin-bottom: 27px;
-  margin-top: 27px;
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  width: 270px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  text-align: center;
+}
+
+.team__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: var(--additional-color);
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 16px;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: fill;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  /* transition: transform 250ms; */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--brand-color);
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  /* transition: transform 250ms; */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: var(--secondary-color);
 }
 
 /* END ADD TO SASS */
