@@ -1,17 +1,19 @@
+.business-text, .business__header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .business {
   padding-bottom: 94px;
   padding-top: 0px;
 }
-
 .business__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -28,7 +30,6 @@
 .business-list__item {
   position: relative;
 }
-
 .business-list__item:not(:last-child) {
   padding-right: 30px;
 }
@@ -38,17 +39,14 @@
   bottom: 0;
   height: 70px;
   width: 100%;
-  background: rgba(47, 48, 58, 0.8);
+  background: getColor "business-background";
   border: 0;
   margin-bottom: 3px;
 }
 
 .business-text {
-  text-align: center;
   margin-bottom: 27px;
   margin-top: 27px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

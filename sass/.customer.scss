@@ -1,32 +1,18 @@
-$main-color: #212121;
-  $secondary-color: #ffffff;
-  $brand-color: #2196f3;
-  $additional-color: #757575;
-  $bg-our-team-color: #f5f4fa;
-  // &logo-color: #afb1b8;
-  $logo-border: #afb1b8;
-
-
+@import 'utils/_variables';
 
 .customer {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-
-.customer__header {
+  &__header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $main-color;
+  color: getColor('main-color');
   margin-bottom: 50px;
 }
-
-.greed__list:not(:last-child) {
-  margin-right: 30px;
 }
-
 
 .greed {
   display: flex;
@@ -34,6 +20,10 @@ $main-color: #212121;
   margin: 0;
   list-style: none;
   justify-content: center;
+
+  &__list:not(:last-child) {
+  margin-right: 30px;
+}
 }
 
 .logo-customer__icon {
@@ -44,27 +34,27 @@ $main-color: #212121;
 
 
 .logo-customer {
-  fill: $logo-border;
+  fill: getColor('logo-border');
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-  outline: 1px solid $logo-border;
+  outline: 1px solid getColor('logo-border');
   border-radius: 4px;
 
   &:hover .logo-customer__icon,
   &:focus .logo-customer__icon
    {
-    fill: $brand-color;
+    fill: getColor('brand-color');
   }
 
   &:hover, &:focus {
-    display: flex;
+  display: flex;
   width: 170px;
   height: 92px;
-  fill: $brand-color;
-  outline: 1px solid $brand-color;
+  fill: getColor('brand-color');
+  outline: 1px solid getColor('brand-color');
   border-radius: 4px;
   }
  
@@ -73,14 +63,3 @@ $main-color: #212121;
 
 
 
-
-
-//.logo-customer {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 170px;
-//   height: 92px;
-//   outline: 1px solid $logo-border;
-//   border-radius: 4px;
-// }
