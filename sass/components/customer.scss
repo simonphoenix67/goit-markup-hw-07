@@ -1,25 +1,29 @@
+@import '../utils/variables';
+
 .customer {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.customer__header {
+
+  &__header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: getColor('main-color');
   margin-bottom: 50px;
 }
+}
 
-.greed {
+.grid {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
   justify-content: center;
-}
-.greed__list:not(:last-child) {
+
+  &__list:not(:last-child) {
   margin-right: 30px;
+}
 }
 
 .logo-customer__icon {
@@ -28,24 +32,34 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .logo-customer {
-  fill: #afb1b8;
+  fill: getColor('logo-border');
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-  outline: 1px solid #afb1b8;
+  outline: 1px solid getColor('logo-border');
   border-radius: 4px;
-}
-.logo-customer:hover .logo-customer__icon, .logo-customer:focus .logo-customer__icon {
-  fill: #2196f3;
-}
-.logo-customer:hover, .logo-customer:focus {
+
+  &:hover .logo-customer__icon,
+  &:focus .logo-customer__icon
+   {
+    fill: getColor('brand-color');
+  }
+
+  &:hover, &:focus {
   display: flex;
   width: 170px;
   height: 92px;
-  fill: #2196f3;
-  outline: 1px solid #2196f3;
+  fill: getColor('brand-color');
+  outline: 1px solid getColor('brand-color');
   border-radius: 4px;
-}/*# sourceMappingURL=.customer.css.map */
+  }
+ 
+}
+
+
+
+

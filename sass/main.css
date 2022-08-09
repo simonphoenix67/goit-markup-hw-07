@@ -2,15 +2,6 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .customer__header {
   font-size: 36px;
   line-height: 1.17;
@@ -20,16 +11,15 @@
   margin-bottom: 50px;
 }
 
-.grid__list:not(:last-child) {
-  margin-right: 30px;
-}
-
 .grid {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
   justify-content: center;
+}
+.grid__list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .logo-customer__icon {
@@ -48,11 +38,9 @@
   outline: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
 .logo-customer:hover .logo-customer__icon, .logo-customer:focus .logo-customer__icon {
   fill: #2196f3;
 }
-
 .logo-customer:hover, .logo-customer:focus {
   display: flex;
   width: 170px;
@@ -60,7 +48,8 @@
   fill: #2196f3;
   outline: 1px solid #2196f3;
   border-radius: 4px;
-} /*# sourceMappingURL=customer.css.map */
+}
+
 .team__position, .team__name, .business-text, .business__header {
   margin-left: auto;
   margin-right: auto;
@@ -102,7 +91,7 @@
   bottom: 0;
   height: 70px;
   width: 100%;
-  background: rgba(47, 48, 58, 0.8);
+  background: getColor "business-background";
   border: 0;
   margin-bottom: 3px;
 }
@@ -213,6 +202,7 @@
 .socials__icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
 }
 .socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
   fill: #ffffff;

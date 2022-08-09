@@ -1,4 +1,4 @@
-@import 'utils/_variables';
+@import '../utils/variables';
 
 %animation {
   transition-property: fill;
@@ -112,12 +112,11 @@
 .socials__icon {
   width: 20px;
   height: 20px;
-  fill: getColor('logo-color');
+  fill: getColor('logo-border');
   @extend %animation;
 
   .socials__link:hover &,
   .socials__link:focus & {
   fill: getColor('secondary-color');
 }
-
 }

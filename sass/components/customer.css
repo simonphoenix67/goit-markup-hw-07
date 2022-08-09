@@ -1,29 +1,25 @@
-@import 'utils/_variables';
-
 .customer {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  &__header {
+}
+.customer__header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: getColor('main-color');
+  color: #212121;
   margin-bottom: 50px;
 }
-}
 
-.greed {
+.grid {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
   justify-content: center;
-
-  &__list:not(:last-child) {
-  margin-right: 30px;
 }
+.grid__list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .logo-customer__icon {
@@ -32,34 +28,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .logo-customer {
-  fill: getColor('logo-border');
+  fill: #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-  outline: 1px solid getColor('logo-border');
+  outline: 1px solid #afb1b8;
   border-radius: 4px;
-
-  &:hover .logo-customer__icon,
-  &:focus .logo-customer__icon
-   {
-    fill: getColor('brand-color');
-  }
-
-  &:hover, &:focus {
+}
+.logo-customer:hover .logo-customer__icon, .logo-customer:focus .logo-customer__icon {
+  fill: #2196f3;
+}
+.logo-customer:hover, .logo-customer:focus {
   display: flex;
   width: 170px;
   height: 92px;
-  fill: getColor('brand-color');
-  outline: 1px solid getColor('brand-color');
+  fill: #2196f3;
+  outline: 1px solid #2196f3;
   border-radius: 4px;
-  }
- 
-}
-
-
-
-
+}/*# sourceMappingURL=customer.css.map */
